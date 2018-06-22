@@ -9,7 +9,9 @@ class InvitationController:
     def send(self, request: Request, Session):
         response = requests.post('https://slack.com/api/users.admin.invite', {
             'token': env('SLACK_TOKEN'),
-            'email': request.input('email')
+            'email': request.input('email'),
+            'channels': 'CAKB7NARF,CAKLL2A12,CB4Q1NAGJ,CAK6S9Z5E,CBBHR3K25',
+            'resend': 'true'
         })
 
         response = json.loads(response.text)

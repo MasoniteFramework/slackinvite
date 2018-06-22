@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ app.NAME }}</title>
+    <title>Masonite Invitation</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -38,9 +38,9 @@
 
             <form action="/invite" method="POST">
                 {{ csrf_field|safe }}
-                <input type="text" class="form-control" name="email">
+                <input type="text" class="form-control" name="email" placeholder="user@email.com">
                 <br>
-                <button type="submit" class="btn btn-success"> Send Me Invite </button>
+                <button type="submit" class="btn btn-success" style="font-weight: 900"> Send Me Invite </button>
             </form>
 
             
