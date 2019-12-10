@@ -12,7 +12,8 @@ html, body {
 .flex-center {
   align-items: center;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around;
+  flex-direction: column; }
 
 .position-ref {
   position: relative; }
